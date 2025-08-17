@@ -14,10 +14,10 @@ export default function Socials() {
   const platforms = [
     {
       name: "LinkedIn",
-      handle: "@david-martin-tech",
-      description: "Professional insights on AI governance, technology risk, and financial services innovation.",
+      handle: "@dmartinpwc",
+      description: "Professional insights on AI governance, technology risk, and national security innovation.",
       icon: <Linkedin className="h-6 w-6" />,
-      link: "#",
+      link: "https://www.linkedin.com/in/dmartinpwc",
       stats: { followers: "2.5K", posts: "150+" },
       recent: [
         "The Future of AI Risk Management in Banking",
@@ -27,10 +27,10 @@ export default function Socials() {
     },
     {
       name: "Medium",
-      handle: "@davidmartin",
+      handle: "@victorycross",
       description: "Deep-dive articles on technology trends, risk management methodologies, and industry analysis.",
       icon: <MessageSquare className="h-6 w-6" />,
-      link: "#",
+      link: "https://victorycross.medium.com",
       stats: { followers: "1.2K", posts: "45+" },
       recent: [
         "Implementing AI Governance: Lessons from the Field",
