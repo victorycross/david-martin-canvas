@@ -18,11 +18,11 @@ export default function Socials() {
       description: "Professional insights on AI governance, technology risk, and national security innovation.",
       icon: <Linkedin className="h-6 w-6" />,
       link: "https://www.linkedin.com/in/dmartinpwc",
-      stats: { followers: "2.5K", posts: "150+" },
+      stats: { followers: "Coming Soon", posts: "Coming Soon" },
       recent: [
-        "The Future of AI Risk Management in Banking",
-        "Building Trust in AI: A Regulatory Perspective",
-        "Technology Risk Assessment Framework"
+        "Content coming soon...",
+        "Stay tuned for insights",
+        "More posts on the way"
       ]
     },
     {
@@ -31,35 +31,21 @@ export default function Socials() {
       description: "Deep-dive articles on technology trends, risk management methodologies, and industry analysis.",
       icon: <MessageSquare className="h-6 w-6" />,
       link: "https://victorycross.medium.com",
-      stats: { followers: "1.2K", posts: "45+" },
+      stats: { followers: "Coming Soon", posts: "Coming Soon" },
       recent: [
-        "Implementing AI Governance: Lessons from the Field",
-        "Crisis Management in the Digital Age",
-        "The Intersection of Technology and Regulatory Compliance"
+        "Articles coming soon...",
+        "Deep dives in progress",
+        "Publishing schedule TBD"
       ]
     }
   ]
 
   const talks = [
     {
-      title: "AI Governance Best Practices",
-      event: "FinTech Risk Summit 2024",
-      date: "March 2024",
-      type: "Keynote",
-      link: "#"
-    },
-    {
-      title: "Building Resilient Technology Systems",
-      event: "Enterprise Technology Conference",
-      date: "January 2024",
-      type: "Panel Discussion",
-      link: "#"
-    },
-    {
-      title: "The Future of Financial Services Technology",
-      event: "Banking Innovation Forum",
-      date: "November 2023",
-      type: "Workshop",
+      title: "Speaking engagements coming soon",
+      event: "Future events TBD",
+      date: "2024",
+      type: "Coming Soon",
       link: "#"
     }
   ]
@@ -115,11 +101,11 @@ export default function Socials() {
                 <div>
                   <h4 className="font-medium mb-3 flex items-center gap-2">
                     <TrendingUp className="h-4 w-4" />
-                    Recent Posts
+                    Recent Activity
                   </h4>
                   <div className="space-y-2">
                     {platform.recent.map((post, idx) => (
-                      <div key={idx} className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                      <div key={idx} className="text-sm text-muted-foreground italic">
                         • {post}
                       </div>
                     ))}
@@ -163,9 +149,9 @@ export default function Socials() {
             </div>
 
             <div className="mt-8 text-center">
-              <Button variant="outline" size="lg">
-                Speaking Inquiries
-              </Button>
+              <div className="bg-muted/50 rounded-lg p-6">
+                <p className="text-muted-foreground">Speaking engagement calendar coming soon</p>
+              </div>
             </div>
           </Card>
         </div>
