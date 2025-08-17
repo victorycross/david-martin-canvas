@@ -33,7 +33,7 @@ export default function About() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">About Me</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Technology risk consultant, creative problem solver, and lifelong learner 
+              Leader for National Security, AI Trust and Technology Risk, creative problem solver, and lifelong learner 
               at the intersection of innovation and responsibility.
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function About() {
                     <span className="text-2xl font-bold text-white">DM</span>
                   </div>
                   <h2 className="text-xl font-bold mb-2">David Martin</h2>
-                  <p className="text-muted-foreground text-sm">Technology Risk Consultant</p>
+                  <p className="text-muted-foreground text-sm">Leader, National Security, AI Trust & Technology Risk</p>
                 </div>
 
                 <div className="space-y-3 text-sm">
@@ -83,13 +83,13 @@ export default function About() {
                   <h3 className="text-xl font-semibold">Professional Background</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  As a Technology Risk Consultant at PwC, I specialize in AI governance and risk management 
-                  for financial services institutions. My work focuses on helping organizations navigate 
+                  As the leader for National Security, AI Trust and Technology Risk at PwC, I specialize in AI governance and risk management 
+                  across national security and financial services sectors. My work focuses on helping organizations navigate 
                   the complex regulatory landscape while implementing innovative AI solutions responsibly.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  I bring a unique perspective that combines technical expertise with regulatory insight, 
-                  ensuring that cutting-edge technology deployments meet both business objectives and 
+                  I bring a unique perspective that combines technical expertise with national security insight and regulatory knowledge, 
+                  ensuring that cutting-edge technology deployments meet both security objectives and 
                   compliance requirements.
                 </p>
               </Card>

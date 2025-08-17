@@ -15,8 +15,8 @@ export default function Home() {
             <span className="text-gradient">Write.</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I'm David Martin, a technology risk consultant passionate about AI governance, 
-            creative projects, and meaningful solutions.
+            I'm David Martin, leader for National Security, AI Trust and Technology Risk, 
+            passionate about AI governance, creative projects, and meaningful solutions.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-semibold mb-2">Professional</h3>
               <p className="text-muted-foreground">
-                Technology Risk Consultant at PwC, specializing in AI governance and financial services.
+                Leader for National Security, AI Trust and Technology Risk at PwC.
               </p>
             </div>
             <div className="text-center">
