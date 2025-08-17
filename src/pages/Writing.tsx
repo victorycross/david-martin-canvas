@@ -43,7 +43,7 @@ export default function Writing() {
                 <div className="flex gap-4 shrink-0">
                   <div className="relative group">
                     <img 
-                      src="/profile-professional.png" 
+                      src="/profile-professional.jpg" 
                       alt="Professional headshot" 
                       className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
                     />
@@ -51,7 +51,7 @@ export default function Writing() {
                   </div>
                   <div className="relative group">
                     <img 
-                      src="/profile-casual.png" 
+                      src="/profile-casual.jpg" 
                       alt="Casual outdoor photo" 
                       className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
                     />
@@ -59,7 +59,7 @@ export default function Writing() {
                   </div>
                   <div className="relative group">
                     <img 
-                      src="/profile-ai.png" 
+                      src="/profile-ai.jpg" 
                       alt="AI-generated portrait" 
                       className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
                     />
