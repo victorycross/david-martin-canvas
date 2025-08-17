@@ -6,29 +6,21 @@ import { ExternalLink, Calendar } from "lucide-react"
 export default function Writing() {
   const posts = [
     {
-      title: "AI Governance in Financial Services",
-      description: "Exploring the regulatory landscape and best practices for implementing AI in financial institutions.",
-      date: "2024-01-15",
+      title: "Upcoming Articles on AI Governance",
+      description: "Deep-dive articles on AI governance, national security, and technology risk management coming soon to LinkedIn and Medium.",
+      date: "2024-12-01",
       platform: "LinkedIn",
-      tags: ["AI Governance", "Financial Services", "Risk Management"],
-      link: "#",
+      tags: ["AI Governance", "National Security", "Coming Soon"],
+      link: "https://www.linkedin.com/in/dmartinpwc",
       featured: true
     },
     {
-      title: "Building Resilient Crisis Management Systems",
-      description: "Lessons learned from developing crisis management applications for enterprise environments.",
-      date: "2024-01-08",
-      platform: "Medium",
-      tags: ["Crisis Management", "Enterprise Software", "Technology"],
-      link: "#",
-    },
-    {
-      title: "The Future of Technology Risk",
-      description: "Insights into emerging risks and opportunities in the evolving technology landscape.",
-      date: "2023-12-20",
-      platform: "LinkedIn",
-      tags: ["Technology Risk", "Future Trends", "Innovation"],
-      link: "#",
+      title: "Technology Risk Insights",
+      description: "Sharing insights from leading national security and AI trust initiatives. Articles in development.",
+      date: "2024-12-01",
+      platform: "Medium", 
+      tags: ["Technology Risk", "AI Trust", "Coming Soon"],
+      link: "https://victorycross.medium.com",
     }
   ]
 
@@ -39,8 +31,8 @@ export default function Writing() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Writing</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Thoughts on technology risk, AI governance, and insights from the intersection 
-              of innovation and responsibility.
+              Thoughts on national security, AI governance, technology risk, and insights from leading 
+              AI trust initiatives. Articles and insights coming soon.
             </p>
           </div>
 
@@ -53,11 +45,11 @@ export default function Writing() {
                       <h3 className="text-xl font-semibold hover:text-primary transition-colors">
                         {post.title}
                       </h3>
-                      {post.featured && (
-                        <Badge variant="secondary" className="bg-primary/10 text-primary">
-                          Featured
-                        </Badge>
-                      )}
+                        {post.featured && (
+                          <Badge variant="secondary" className="bg-primary/10 text-primary">
+                            Coming Soon
+                          </Badge>
+                        )}
                     </div>
                     
                     <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -93,20 +85,32 @@ export default function Writing() {
                     size="sm" 
                     className="shrink-0"
                     asChild
-                  >
-                    <a href={post.link} target="_blank" rel="noopener noreferrer">
-                      Read More <ExternalLink className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+                    >
+                      <a href={post.link} target="_blank" rel="noopener noreferrer">
+                        {post.platform === "LinkedIn" ? "View LinkedIn" : "View Medium"} <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
                 </div>
               </Card>
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <Button variant="outline" size="lg">
-              View All Posts
-            </Button>
+          <div className="mt-12 text-center space-y-4">
+            <div className="bg-muted/50 rounded-lg p-6">
+              <p className="text-muted-foreground mb-4">More articles coming soon!</p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button variant="outline" asChild>
+                  <a href="https://www.linkedin.com/in/dmartinpwc" target="_blank" rel="noopener noreferrer">
+                    Follow on LinkedIn
+                  </a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a href="https://victorycross.medium.com" target="_blank" rel="noopener noreferrer">
+                    Follow on Medium
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
