@@ -36,6 +36,48 @@ export default function Writing() {
             </p>
           </div>
 
+          {/* Author Section */}
+          <div className="mb-12">
+            <Card className="p-8 bg-gradient-to-r from-muted/50 to-muted/30">
+              <div className="flex flex-col lg:flex-row gap-8 items-center">
+                <div className="flex gap-4 shrink-0">
+                  <div className="relative group">
+                    <img 
+                      src="/profile-professional.png" 
+                      alt="Professional headshot" 
+                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                  </div>
+                  <div className="relative group">
+                    <img 
+                      src="/profile-casual.png" 
+                      alt="Casual outdoor photo" 
+                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                  </div>
+                  <div className="relative group">
+                    <img 
+                      src="/profile-ai.png" 
+                      alt="AI-generated portrait" 
+                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                    <Badge className="absolute -top-2 -right-2 text-xs bg-primary/90 text-white">AI</Badge>
+                  </div>
+                </div>
+                <div className="text-center lg:text-left">
+                  <h2 className="text-2xl font-bold mb-2">About the Author</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Experienced professional focused on AI governance, national security, and technology risk management. 
+                    Contributing insights from leading AI trust initiatives and working at the intersection of innovation and responsibility.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+
           <div className="space-y-6">
             {posts.map((post, index) => (
               <Card key={index} className={`p-6 hover:shadow-medium transition-all duration-medium ${post.featured ? 'border-primary/20 bg-gradient-to-r from-primary/5 to-accent/5' : ''}`}>
