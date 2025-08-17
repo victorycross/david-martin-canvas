@@ -12,8 +12,43 @@ import Applications from "./pages/Applications";
 import About from "./pages/About";
 import Socials from "./pages/Socials";
 import NotFound from "./pages/NotFound";
+import { useEffect, useState } from "react";
 
 const queryClient = new QueryClient();
+
+const AppContent = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/writing" element={<Writing />} />
+        <Route path="/creative" element={<Creative />} />
+        <Route path="/applications" element={<Applications />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/socials" element={<Socials />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
+  );
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -22,27 +57,11 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <AppLayout />
+          <AppContent />
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
-);
-
-const AppLayout = () => (
-  <div className="min-h-screen bg-background">
-    <Navigation />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/writing" element={<Writing />} />
-      <Route path="/creative" element={<Creative />} />
-      <Route path="/applications" element={<Applications />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/socials" element={<Socials />} />
-      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </div>
 );
 
 export default App;

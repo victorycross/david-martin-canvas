@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -7,15 +7,14 @@ import { ThemeToggle } from "@/components/theme-toggle"
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const location = useLocation()
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  useEffect(() => {
+  const handleLinkClick = () => {
     setIsOpen(false)
-  }, [location.pathname])
+  }
 
   const navItems = [
     { href: "/writing", label: "Writing" },
@@ -89,7 +88,7 @@ export function Navigation() {
                 key={item.href}
                 to={item.href}
                 className="block px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                onClick={() => setIsOpen(false)}
+                onClick={handleLinkClick}
               >
                 {item.label}
               </Link>
