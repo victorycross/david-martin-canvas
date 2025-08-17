@@ -1,11 +1,21 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [location.pathname])
 
   const navItems = [
     { href: "/writing", label: "Writing" },
@@ -14,6 +24,22 @@ export function Navigation() {
     { href: "/socials", label: "Socials" },
     { href: "/about", label: "About" },
   ]
+
+  if (!mounted) {
+    return (
+      <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
+        <div className="container flex h-16 items-center justify-between">
+          <div className="text-xl font-bold">David Martin</div>
+          <div className="hidden md:flex items-center space-x-6">
+            <ThemeToggle />
+          </div>
+          <div className="md:hidden">
+            <ThemeToggle />
+          </div>
+        </div>
+      </nav>
+    )
+  }
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">

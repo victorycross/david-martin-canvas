@@ -19,6 +19,16 @@ export function ThemeProvider({
   disableTransitionOnChange = true,
   ...props 
 }: ThemeProviderProps) {
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <>{children}</>
+  }
+
   return (
     <NextThemesProvider 
       attribute={attribute}

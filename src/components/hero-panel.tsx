@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import { Card } from "@/components/ui/card"
@@ -20,6 +20,29 @@ export function HeroPanel({
   gradient = "bg-gradient-primary",
   className = "" 
 }: HeroPanelProps) {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return (
+      <Card className={`panel-hover p-8 h-full border-2 transition-all duration-medium hover:border-primary/20 ${className}`}>
+        <div className="flex flex-col h-full">
+          <div className={`w-16 h-16 rounded-xl ${gradient} flex items-center justify-center mb-6`}>
+            {icon}
+          </div>
+          <h3 className="text-2xl font-bold mb-4">{title}</h3>
+          <p className="text-muted-foreground mb-6 flex-grow leading-relaxed">{description}</p>
+          <div className="flex items-center text-primary font-medium">
+            Explore <ArrowRight className="ml-2 h-4 w-4" />
+          </div>
+        </div>
+      </Card>
+    )
+  }
+
   return (
     <Link to={href} className="group">
       <Card className={`panel-hover p-8 h-full border-2 transition-all duration-medium hover:border-primary/20 ${className}`}>

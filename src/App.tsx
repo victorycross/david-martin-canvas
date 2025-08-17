@@ -22,23 +22,27 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="min-h-screen bg-background">
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/writing" element={<Writing />} />
-              <Route path="/creative" element={<Creative />} />
-              <Route path="/applications" element={<Applications />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/socials" element={<Socials />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
+          <AppLayout />
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
+);
+
+const AppLayout = () => (
+  <div className="min-h-screen bg-background">
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/writing" element={<Writing />} />
+      <Route path="/creative" element={<Creative />} />
+      <Route path="/applications" element={<Applications />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/socials" element={<Socials />} />
+      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </div>
 );
 
 export default App;
