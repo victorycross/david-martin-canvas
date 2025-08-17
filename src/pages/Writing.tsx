@@ -42,28 +42,19 @@ export default function Writing() {
               <div className="flex flex-col lg:flex-row gap-8 items-center">
                 <div className="flex gap-4 shrink-0">
                   <div className="relative group">
-                    <img 
-                      src="/profile-professional.jpg" 
-                      alt="Professional headshot" 
-                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                    <div className="w-24 h-24 rounded-lg bg-muted flex items-center justify-center shadow-medium hover:shadow-lg transition-shadow cursor-pointer">
+                      <span className="text-muted-foreground text-xs">Professional</span>
+                    </div>
                   </div>
                   <div className="relative group">
-                    <img 
-                      src="/profile-casual.jpg" 
-                      alt="Casual outdoor photo" 
-                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                    <div className="w-24 h-24 rounded-lg bg-muted flex items-center justify-center shadow-medium hover:shadow-lg transition-shadow cursor-pointer">
+                      <span className="text-muted-foreground text-xs">Casual</span>
+                    </div>
                   </div>
                   <div className="relative group">
-                    <img 
-                      src="/profile-ai.jpg" 
-                      alt="AI-generated portrait" 
-                      className="w-24 h-24 rounded-lg object-cover shadow-medium hover:shadow-lg transition-shadow cursor-pointer"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 rounded-lg transition-colors"></div>
+                    <div className="w-24 h-24 rounded-lg bg-muted flex items-center justify-center shadow-medium hover:shadow-lg transition-shadow cursor-pointer">
+                      <span className="text-muted-foreground text-xs">AI Version</span>
+                    </div>
                     <Badge className="absolute -top-2 -right-2 text-xs bg-primary/90 text-white">AI</Badge>
                   </div>
                 </div>
