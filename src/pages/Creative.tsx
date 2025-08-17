@@ -7,35 +7,21 @@ import { Music, Image as ImageIcon, Play, ExternalLink } from "lucide-react"
 export default function Creative() {
   const musicProjects = [
     {
-      title: "Midnight Reflections",
-      description: "A contemplative piano piece exploring themes of solitude and self-discovery.",
-      type: "Piano",
-      duration: "4:32",
-      embed: "#", // Placeholder for audio embed
-    },
-    {
-      title: "Urban Rhythms",
-      description: "Guitar-driven composition inspired by city life and human connections.",
-      type: "Guitar",
-      duration: "3:18",
+      title: "Music Projects Coming Soon",
+      description: "Original compositions and recordings currently in development. Stay tuned for piano and guitar pieces.",
+      type: "Coming Soon",
+      duration: "TBD",
       embed: "#",
     }
   ]
 
   const artProjects = [
     {
-      title: "Digital Landscapes",
-      description: "AI-generated landscapes exploring the boundary between natural and artificial beauty.",
-      medium: "Midjourney",
+      title: "Visual Art Portfolio",
+      description: "Digital art and creative explorations coming soon. Working on AI-generated and traditional pieces.",
+      medium: "Coming Soon",
       year: "2024",
-      image: "/placeholder-art-1.jpg",
-    },
-    {
-      title: "Abstract Emotions",
-      description: "A series exploring human emotions through abstract digital art.",
-      medium: "Midjourney",
-      year: "2023",
-      image: "/placeholder-art-2.jpg",
+      image: "/placeholder-art.jpg",
     }
   ]
 
@@ -84,9 +70,10 @@ export default function Creative() {
                       {project.description}
                     </p>
                     
-                    <div className="bg-muted rounded-lg p-4 flex items-center justify-center text-muted-foreground">
-                      <Music className="h-8 w-8 mr-3" />
-                      Audio Player Placeholder
+                    <div className="bg-muted rounded-lg p-8 flex flex-col items-center justify-center text-muted-foreground min-h-[120px]">
+                      <Music className="h-12 w-12 mb-3 opacity-50" />
+                      <p className="text-center">Audio player coming soon</p>
+                      <p className="text-xs text-center mt-1">Recordings in progress</p>
                     </div>
                   </Card>
                 ))}
@@ -98,9 +85,10 @@ export default function Creative() {
                 {artProjects.map((project, index) => (
                   <Card key={index} className="overflow-hidden hover:shadow-medium transition-all duration-medium group">
                     <div className="aspect-square bg-gradient-surface relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-primary opacity-20 group-hover:opacity-30 transition-opacity" />
-                      <div className="absolute inset-0 flex items-center justify-center text-white/60">
-                        <ImageIcon className="h-16 w-16" />
+                      <div className="absolute inset-0 bg-gradient-primary opacity-10" />
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-muted-foreground">
+                        <ImageIcon className="h-16 w-16 mb-3 opacity-50" />
+                        <p className="text-sm text-center">Artwork coming soon</p>
                       </div>
                     </div>
                     
@@ -128,9 +116,9 @@ export default function Creative() {
               </div>
               
               <div className="text-center mt-8">
-                <Button variant="outline" size="lg">
-                  View Full Gallery
-                </Button>
+                <div className="bg-muted/50 rounded-lg p-6">
+                  <p className="text-muted-foreground">Full gallery coming soon</p>
+                </div>
               </div>
             </TabsContent>
           </Tabs>
