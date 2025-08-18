@@ -5,7 +5,7 @@ import { ExternalLink, Calendar } from "lucide-react";
 export default function Writing() {
   const posts = [{
     title: "Upcoming Articles on AI Governance",
-    description: "Deep-dive articles on AI governance, national security, and technology risk management coming soon to LinkedIn and Medium.",
+    description: "Deep-dive articles on AI governance, Technology, and technology risk management coming soon to LinkedIn and Medium.",
     date: "2024-12-01",
     platform: "LinkedIn",
     tags: ["AI Governance", "Coaching", "Coming Soon"],
@@ -13,7 +13,7 @@ export default function Writing() {
     featured: true
   }, {
     title: "Technology Risk Insights",
-    description: "Sharing insights from leading national security and AI trust initiatives. Articles in development.",
+    description: "Sharing insights from leading Technology and AI trust initiatives. Articles in development.",
     date: "2024-12-01",
     platform: "Medium",
     tags: ["Technology Risk", "AI Trust", "Coming Soon"],
