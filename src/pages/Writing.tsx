@@ -8,7 +8,7 @@ export default function Writing() {
     description: "Deep-dive articles on AI governance, national security, and technology risk management coming soon to LinkedIn and Medium.",
     date: "2024-12-01",
     platform: "LinkedIn",
-    tags: ["AI Governance", "National Security", "Coming Soon"],
+    tags: ["AI Governance", "Coaching", "Coming Soon"],
     link: "https://www.linkedin.com/in/dmartinpwc",
     featured: true
   }, {
