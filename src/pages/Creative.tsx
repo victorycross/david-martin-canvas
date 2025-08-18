@@ -12,11 +12,11 @@ export default function Creative() {
   const [artRefreshTrigger, setArtRefreshTrigger] = useState(0)
   const musicProjects = [
     {
-      title: "Coding Flow",
+      title: "Lofi Girl",
       description: "Perfect background music for focused programming sessions and creative work.",
-      genre: "Electronic/Ambient",
+      genre: "Lofi Hip Hop",
       tracks: "50+ tracks",
-      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator",
+      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1E4yVfD4M4LwFh?utm_source=generator",
     },
     {
       title: "Album Discovery",
