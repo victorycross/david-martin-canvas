@@ -113,7 +113,7 @@ export default function Creative() {
                 <ArtUpload onUploadSuccess={() => setArtRefreshTrigger(prev => prev + 1)} />
               </div>
               
-              <ArtGallery refreshTrigger={artRefreshTrigger} />
+              <ArtGallery />
             </TabsContent>
           </Tabs>
         </div>

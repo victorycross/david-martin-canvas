@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Upload, Plus, Loader2 } from "lucide-react"
 import { toast } from "sonner"
 import { artworkService } from "@/lib/artwork-service"
+import { useAuth } from "@/hooks/use-auth"
 
 interface ArtUploadProps {
   onUploadSuccess?: () => void
@@ -17,6 +18,7 @@ interface ArtUploadProps {
 export function ArtUpload({ onUploadSuccess }: ArtUploadProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isUploading, setIsUploading] = useState(false)
+  const { user } = useAuth()
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -46,6 +48,11 @@ export function ArtUpload({ onUploadSuccess }: ArtUploadProps) {
   }
 
   const handleUpload = async () => {
+    if (!user) {
+      toast.error("You must be signed in to upload artwork")
+      return
+    }
+
     if (!selectedFile || !formData.title || !formData.medium) {
       toast.error("Please fill in all required fields and select an image")
       return
@@ -81,10 +88,14 @@ export function ArtUpload({ onUploadSuccess }: ArtUploadProps) {
 
     } catch (error) {
       console.error('Upload error:', error)
-      toast.error("Failed to upload artwork. Please try again.")
+      toast.error(error instanceof Error ? error.message : "Failed to upload artwork. Please try again.")
     } finally {
       setIsUploading(false)
     }
+  }
+
+  if (!user) {
+    return null
   }
 
   return (
