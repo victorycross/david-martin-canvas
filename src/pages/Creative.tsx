@@ -8,7 +8,7 @@ export default function Creative() {
   const musicProjects = [
     {
       title: "Music Projects Coming Soon",
-      description: "Original compositions and recordings currently in development. Stay tuned for piano and guitar pieces.",
+      description: "Eclectic musical interests across all genres, ready to share.",
       type: "Coming Soon",
       duration: "TBD",
       embed: "#",
