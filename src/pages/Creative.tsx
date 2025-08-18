@@ -1,11 +1,15 @@
+import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { SpotifyEmbed } from "@/components/ui/spotify-embed"
+import { ArtUpload } from "@/components/art-upload"
+import { ArtGallery } from "@/components/art-gallery"
 import { Music, Image as ImageIcon, ExternalLink } from "lucide-react"
 
 export default function Creative() {
+  const [artRefreshTrigger, setArtRefreshTrigger] = useState(0)
   const musicProjects = [
     {
       title: "Coding Flow",
@@ -30,15 +34,9 @@ export default function Creative() {
     }
   ]
 
-  const artProjects = [
-    {
-      title: "Visual Art Portfolio",
-      description: "Digital art and creative explorations coming soon. Working on AI-generated and traditional pieces.",
-      medium: "Coming Soon",
-      year: "2024",
-      image: "/placeholder-art.jpg",
-    }
-  ]
+  const artProjects = {
+    description: "A collection of digital art, AI-generated pieces, and multimedia creations spanning several years of artistic exploration."
+  }
 
   return (
     <div className="min-h-screen">
@@ -105,45 +103,17 @@ export default function Creative() {
             </TabsContent>
 
             <TabsContent value="art" className="space-y-6">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {artProjects.map((project, index) => (
-                  <Card key={index} className="overflow-hidden hover:shadow-medium transition-all duration-medium group">
-                    <div className="aspect-square bg-gradient-surface relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-primary opacity-10" />
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-muted-foreground">
-                        <ImageIcon className="h-16 w-16 mb-3 opacity-50" />
-                        <p className="text-sm text-center">Artwork coming soon</p>
-                      </div>
-                    </div>
-                    
-                    <div className="p-6">
-                      <div className="flex items-center justify-between mb-3">
-                        <h3 className="text-lg font-semibold">{project.title}</h3>
-                        <Badge variant="outline">{project.year}</Badge>
-                      </div>
-                      
-                      <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
-                        {project.description}
-                      </p>
-                      
-                      <div className="flex items-center justify-between">
-                        <Badge variant="secondary" className="text-xs">
-                          {project.medium}
-                        </Badge>
-                        <Button size="sm" variant="ghost">
-                          <ExternalLink className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <h3 className="text-lg font-semibold mb-2">Visual Art Portfolio</h3>
+                  <p className="text-muted-foreground">
+                    {artProjects.description}
+                  </p>
+                </div>
+                <ArtUpload onUploadSuccess={() => setArtRefreshTrigger(prev => prev + 1)} />
               </div>
               
-              <div className="text-center mt-8">
-                <div className="bg-muted/50 rounded-lg p-6">
-                  <p className="text-muted-foreground">Full gallery coming soon</p>
-                </div>
-              </div>
+              <ArtGallery refreshTrigger={artRefreshTrigger} />
             </TabsContent>
           </Tabs>
         </div>
