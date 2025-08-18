@@ -2,16 +2,31 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Music, Image as ImageIcon, Play, ExternalLink } from "lucide-react"
+import { SpotifyEmbed } from "@/components/ui/spotify-embed"
+import { Music, Image as ImageIcon, ExternalLink } from "lucide-react"
 
 export default function Creative() {
   const musicProjects = [
     {
-      title: "Music Projects Coming Soon",
-      description: "Eclectic musical interests across all genres, ready to share.",
-      type: "Coming Soon",
-      duration: "TBD",
-      embed: "#",
+      title: "Coding Flow",
+      description: "Perfect background music for focused programming sessions and creative work.",
+      genre: "Electronic/Ambient",
+      tracks: "50+ tracks",
+      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator",
+    },
+    {
+      title: "Creative Inspiration",
+      description: "An eclectic mix of genres to spark creativity and keep the energy flowing.",
+      genre: "Multi-Genre",
+      tracks: "80+ tracks", 
+      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator",
+    },
+    {
+      title: "Chill Vibes",
+      description: "Relaxed tunes for unwinding and contemplative moments.",
+      genre: "Indie/Alternative",
+      tracks: "40+ tracks",
+      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX3rxVfibe1L0?utm_source=generator",
     }
   ]
 
@@ -50,33 +65,42 @@ export default function Creative() {
             </TabsList>
 
             <TabsContent value="music" className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-6">
                 {musicProjects.map((project, index) => (
-                  <Card key={index} className="p-6 hover:shadow-medium transition-all duration-medium">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Badge variant="secondary">{project.type}</Badge>
-                          <span className="text-sm text-muted-foreground">{project.duration}</span>
+                  <Card key={index} className="overflow-hidden hover:shadow-medium transition-all duration-medium">
+                    <div className="p-6 pb-4">
+                      <div className="flex items-start justify-between mb-4">
+                        <div className="flex-1">
+                          <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                          <div className="flex items-center gap-2 mb-3 flex-wrap">
+                            <Badge variant="secondary">{project.genre}</Badge>
+                            <span className="text-sm text-muted-foreground">{project.tracks}</span>
+                          </div>
                         </div>
                       </div>
-                      <Button size="sm" variant="secondary">
-                        <Play className="h-4 w-4" />
-                      </Button>
+                      
+                      <p className="text-muted-foreground leading-relaxed mb-4">
+                        {project.description}
+                      </p>
                     </div>
                     
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      {project.description}
-                    </p>
-                    
-                    <div className="bg-muted rounded-lg p-8 flex flex-col items-center justify-center text-muted-foreground min-h-[120px]">
-                      <Music className="h-12 w-12 mb-3 opacity-50" />
-                      <p className="text-center">Audio player coming soon</p>
-                      <p className="text-xs text-center mt-1">Recordings in progress</p>
+                    <div className="px-6 pb-6">
+                      <SpotifyEmbed 
+                        src={project.embed}
+                        title={project.title}
+                        compact={true}
+                      />
                     </div>
                   </Card>
                 ))}
+              </div>
+              
+              <div className="text-center mt-8">
+                <div className="bg-muted/50 rounded-lg p-6">
+                  <p className="text-muted-foreground">
+                    Discover more playlists and musical interests through the embedded players above
+                  </p>
+                </div>
               </div>
             </TabsContent>
 
