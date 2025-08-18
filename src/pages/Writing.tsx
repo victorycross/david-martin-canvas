@@ -144,19 +144,19 @@ export default function Writing() {
             ))}
           </div>
 
-          {/* Medium Embed */}
+          {/* Medium Link Section */}
           <div className="mt-12">
-            <Card className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">Latest from Medium</h2>
-              <div className="w-full">
-                <iframe 
-                  src="https://medium.com/@brightpathtech" 
-                  width="100%" 
-                  height="600" 
-                  style={{ border: 'none', borderRadius: '12px' }}
-                  title="Medium Profile"
-                  className="w-full"
-                />
+            <Card className="p-8 bg-gradient-to-r from-muted/50 to-muted/30">
+              <div className="text-center">
+                <h2 className="text-2xl font-bold mb-4">Latest from Medium</h2>
+                <p className="text-muted-foreground mb-6">
+                  Explore my latest articles on AI governance, technology risk, and national security insights.
+                </p>
+                <Button size="lg" asChild>
+                  <a href="https://medium.com/@brightpathtech" target="_blank" rel="noopener noreferrer">
+                    Visit Medium Profile <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
               </div>
             </Card>
           </div>
