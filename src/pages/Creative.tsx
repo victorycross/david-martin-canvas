@@ -19,11 +19,11 @@ export default function Creative() {
       embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?utm_source=generator",
     },
     {
-      title: "Creative Inspiration",
-      description: "An eclectic mix of genres to spark creativity and keep the energy flowing.",
-      genre: "Multi-Genre",
-      tracks: "80+ tracks", 
-      embed: "https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator",
+      title: "Album Discovery",
+      description: "Featured album selection showcasing diverse musical expressions and artistic creativity.",
+      genre: "Featured Album",
+      tracks: "Album tracks", 
+      embed: "https://open.spotify.com/embed/album/48D1hRORqJq52qsnUYZX56?utm_source=generator",
     },
     {
       title: "Chill Vibes",
