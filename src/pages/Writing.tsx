@@ -24,10 +24,7 @@ export default function Writing() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Writing</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Thoughts on national security, AI governance, technology risk, and insights from leading 
-              AI trust initiatives. Articles and insights coming soon.
-            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Thoughts on AI governance, technology risk, coaching and many other topics.</p>
           </div>
 
           {/* Author Section */}
