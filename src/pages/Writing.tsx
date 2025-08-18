@@ -144,6 +144,23 @@ export default function Writing() {
             ))}
           </div>
 
+          {/* Medium Embed */}
+          <div className="mt-12">
+            <Card className="p-6">
+              <h2 className="text-2xl font-bold mb-4 text-center">Latest from Medium</h2>
+              <div className="w-full">
+                <iframe 
+                  src="https://medium.com/@brightpathtech" 
+                  width="100%" 
+                  height="600" 
+                  style={{ border: 'none', borderRadius: '12px' }}
+                  title="Medium Profile"
+                  className="w-full"
+                />
+              </div>
+            </Card>
+          </div>
+
           <div className="mt-12 text-center space-y-4">
             <div className="bg-muted/50 rounded-lg p-6">
               <p className="text-muted-foreground mb-4">More articles coming soon!</p>
