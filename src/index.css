@@ -7,14 +7,14 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors */
+    /* Core Brand Colors - High Contrast */
     --background: 0 0% 100%;
-    --foreground: 203 92% 12%;
+    --foreground: 220 15% 15%;
     
     /* Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 203 92% 12%;
-    --surface: 225 36% 91%;
+    --card-foreground: 220 15% 15%;
+    --surface: 0 0% 98%;
     --surface-elevated: 0 0% 100%;
     
     /* Interactive Colors */
@@ -22,13 +22,13 @@
     --primary-hover: 203 92% 8%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 225 36% 91%;
-    --secondary-hover: 212 73% 85%;
-    --secondary-foreground: 203 92% 12%;
+    --secondary: 0 0% 96%;
+    --secondary-hover: 0 0% 92%;
+    --secondary-foreground: 220 15% 15%;
     
     --accent: 212 73% 85%;
     --accent-hover: 212 73% 80%;
-    --accent-foreground: 203 92% 12%;
+    --accent-foreground: 220 15% 15%;
     
     /* Status Colors */
     --success: 142 80% 45%;
@@ -37,17 +37,17 @@
     --destructive-foreground: 0 0% 100%;
     
     /* Neutral Colors */
-    --muted: 225 36% 91%;
-    --muted-foreground: 203 92% 25%;
-    --border: 212 73% 85%;
-    --input: 225 36% 91%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 220 15% 40%;
+    --border: 0 0% 90%;
+    --input: 0 0% 100%;
     --ring: 203 92% 12%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(203 92% 12%), hsl(212 73% 85%));
-    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(225 36% 91%));
-    --gradient-hero: linear-gradient(135deg, hsl(203 92% 12%), hsl(212 73% 85%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(225 36% 91%));
+    /* Simplified Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(203 92% 12%), hsl(203 92% 20%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(203 92% 12%), hsl(203 92% 20%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
     
     /* Shadows */
     --shadow-soft: 0 2px 12px -2px hsl(203 92% 12% / 0.15);
@@ -80,47 +80,47 @@
   }
 
   .dark {
-    /* Core Brand Colors */
-    --background: 203 92% 12%;
-    --foreground: 0 0% 100%;
+    /* Core Brand Colors - High Contrast */
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
     
     /* Surface Colors */
-    --card: 203 92% 15%;
-    --card-foreground: 0 0% 100%;
-    --surface: 203 92% 15%;
-    --surface-elevated: 203 92% 18%;
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 95%;
+    --surface: 220 15% 12%;
+    --surface-elevated: 220 15% 15%;
     
     /* Interactive Colors */
-    --primary: 212 73% 85%;
-    --primary-hover: 0 0% 100%;
-    --primary-foreground: 203 92% 12%;
+    --primary: 212 73% 75%;
+    --primary-hover: 212 73% 85%;
+    --primary-foreground: 220 15% 8%;
     
-    --secondary: 203 92% 18%;
-    --secondary-hover: 203 92% 22%;
-    --secondary-foreground: 212 73% 85%;
+    --secondary: 220 15% 15%;
+    --secondary-hover: 220 15% 20%;
+    --secondary-foreground: 0 0% 95%;
     
-    --accent: 225 36% 91%;
-    --accent-hover: 0 0% 100%;
-    --accent-foreground: 203 92% 12%;
+    --accent: 212 73% 75%;
+    --accent-hover: 212 73% 85%;
+    --accent-foreground: 220 15% 8%;
     
     /* Status Colors */
     --success: 142 80% 55%;
     --warning: 38 95% 65%;
     --destructive: 0 90% 75%;
-    --destructive-foreground: 203 92% 12%;
+    --destructive-foreground: 220 15% 8%;
     
     /* Neutral Colors */
-    --muted: 203 92% 18%;
-    --muted-foreground: 212 73% 85%;
-    --border: 203 92% 22%;
-    --input: 203 92% 18%;
-    --ring: 212 73% 85%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 0 0% 70%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 212 73% 75%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(212 73% 85%), hsl(225 36% 91%));
-    --gradient-surface: linear-gradient(180deg, hsl(203 92% 12%), hsl(203 92% 15%));
-    --gradient-hero: linear-gradient(135deg, hsl(212 73% 85%), hsl(225 36% 91%));
-    --gradient-subtle: linear-gradient(180deg, hsl(203 92% 12%), hsl(203 92% 15%));
+    /* Simplified Dark Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(212 73% 75%), hsl(212 73% 85%));
+    --gradient-surface: linear-gradient(180deg, hsl(220 15% 8%), hsl(220 15% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(212 73% 75%), hsl(212 73% 85%));
+    --gradient-subtle: linear-gradient(180deg, hsl(220 15% 8%), hsl(220 15% 12%));
     
     /* Shadows */
     --shadow-soft: 0 2px 12px -2px hsl(0 0% 0% / 0.4);
