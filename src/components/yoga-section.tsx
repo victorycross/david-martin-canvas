@@ -102,28 +102,40 @@ export default function YogaSection() {
           <div className="space-y-4 text-white/90 leading-relaxed">
             <p>
               Yoga has become an integral part of my wellness routine, offering both physical benefits 
-              and mental clarity. I focus on building flexibility, strength, and finding moments of 
-              peace in each practice.
+              and mental clarity. I practice regularly at <span className="font-semibold text-white">Breathe Yoga Studio</span> in Toronto, 
+              where I've found my home in their "Yoga for Stiff Men" classes.
             </p>
+            
+            <div className="bg-white/10 rounded-lg p-4 mb-4">
+              <h5 className="font-semibold mb-2 flex items-center gap-2">
+                <Heart className="h-4 w-4" />
+                My Studio: Breathe Yoga Toronto
+              </h5>
+              <p className="text-sm text-white/80 mb-2">
+                "Yoga for Stiff Men" has been my go-to class, specifically designed for those of us 
+                who need extra attention to flexibility and mobility. It's the perfect complement to 
+                strength training and desk work.
+              </p>
+            </div>
             
             <div>
               <h5 className="font-semibold mb-2">Current Practice Focus</h5>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  Morning sun salutation sequences to start the day with intention
+                  Targeted flexibility work for tight hips, shoulders, and hamstrings
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  Deep flexibility work to counteract desk work and physical training
+                  Strength-building poses that complement kettlebell training
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  Balance poses to improve stability and core strength
+                  Mobility sequences to counteract desk work and physical training
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                  Restorative poses for recovery and stress relief
+                  Breathing techniques for stress relief and mental clarity
                 </li>
               </ul>
             </div>
