@@ -27,7 +27,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to David
     const emailResponse = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "David Martin <david@david-martin.ca>",
       to: ["david@david-martin.ca"],
       subject: `Contact Form: ${subject}`,
       html: `
@@ -49,7 +49,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to sender
     await resend.emails.send({
-      from: "David Martin <onboarding@resend.dev>",
+      from: "David Martin <david@david-martin.ca>",
       to: [email],
       subject: "Thank you for reaching out!",
       html: `
