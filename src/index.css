@@ -81,40 +81,40 @@
 
   .dark {
     /* Core Brand Colors - High Contrast */
-    --background: 220 15% 8%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
     
     /* Surface Colors */
-    --card: 220 15% 10%;
-    --card-foreground: 0 0% 95%;
-    --surface: 220 15% 12%;
-    --surface-elevated: 220 15% 15%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+    --surface: 0 0% 9%;
+    --surface-elevated: 0 0% 12%;
     
     /* Interactive Colors */
-    --primary: 212 73% 75%;
-    --primary-hover: 212 73% 85%;
-    --primary-foreground: 220 15% 8%;
+    --primary: 212 73% 80%;
+    --primary-hover: 212 73% 90%;
+    --primary-foreground: 0 0% 3%;
     
-    --secondary: 220 15% 15%;
-    --secondary-hover: 220 15% 20%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 18%;
+    --secondary-hover: 0 0% 25%;
+    --secondary-foreground: 0 0% 98%;
     
-    --accent: 212 73% 75%;
-    --accent-hover: 212 73% 85%;
-    --accent-foreground: 220 15% 8%;
+    --accent: 212 73% 80%;
+    --accent-hover: 212 73% 90%;
+    --accent-foreground: 0 0% 3%;
     
     /* Status Colors */
-    --success: 142 80% 55%;
-    --warning: 38 95% 65%;
+    --success: 142 80% 60%;
+    --warning: 38 95% 70%;
     --destructive: 0 90% 75%;
-    --destructive-foreground: 220 15% 8%;
+    --destructive-foreground: 0 0% 3%;
     
     /* Neutral Colors */
-    --muted: 220 15% 15%;
-    --muted-foreground: 0 0% 70%;
-    --border: 220 15% 20%;
-    --input: 220 15% 15%;
-    --ring: 212 73% 75%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 75%;
+    --border: 0 0% 25%;
+    --input: 0 0% 18%;
+    --ring: 212 73% 80%;
     
     /* Simplified Dark Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(212 73% 75%), hsl(212 73% 85%));
