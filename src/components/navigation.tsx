@@ -22,6 +22,7 @@ export function Navigation() {
     { href: "/writing", label: "Writing" },
     { href: "/creative", label: "Creative" },
     { href: "/technology", label: "Technology" },
+    { href: "/ai", label: "AI" },
     { href: "/health", label: "Health" },
     { href: "/socials", label: "Socials" },
     { href: "/about", label: "About" },

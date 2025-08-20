@@ -3,12 +3,10 @@ import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import ApplicationsSection from "@/components/applications-section";
-import AISection from "@/components/ai-section";
 import TechRiskSection from "@/components/tech-risk-section";
 
 const technologySections = [
   { id: 'applications', name: 'Applications', component: ApplicationsSection },
-  { id: 'ai', name: 'AI Library', component: AISection },
   { id: 'tech-risk', name: 'Tech Risk', component: TechRiskSection }
 ];
 
@@ -36,7 +34,7 @@ export default function Technology() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">Technology</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Software solutions, AI tools, and technology risk management approaches 
+              Software solutions and technology risk management approaches 
               for building better systems and making informed decisions.
             </p>
           </div>
