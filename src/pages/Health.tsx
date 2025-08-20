@@ -153,6 +153,68 @@ export default function Health() {
                   </div>
                 </div>
               </div>
+              
+              {/* Detailed Description */}
+              <div className="mt-8 bg-white/5 rounded-lg p-6">
+                <h4 className="font-semibold mb-4 text-xl">Kettlebell 9 – My Fitness Journey</h4>
+                <div className="space-y-4 text-white/90 leading-relaxed">
+                  <p>
+                    The Kettlebell 9 App is a program I built based on a workout I first learned from trainer Omar Careng. 
+                    I took detailed notes, recorded videos, and translated those sessions into a structured nine-day program 
+                    that anyone can try. Creating this app has been part of my ongoing journey to stay active and motivated, 
+                    and I hope it can support others as well.
+                  </p>
+                  
+                  <div>
+                    <h5 className="font-semibold mb-2">What you'll find in the app</h5>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        A nine-day kettlebell plan combining strength circuits, EMOM training, power ladders, and a dedicated recovery day
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        Workouts designed to improve strength, conditioning, mobility, and fat burn
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        Clear progression with options to scale intensity using 15 lb or 25 lb kettlebells (or dumbbells as alternatives)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        A recovery day with walking, yoga, or light band work to promote mobility and rest
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold mb-2">Please keep in mind</h5>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        Always warm up before each session
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        Stretch after workouts to support recovery
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        Choose weights that are safe and appropriate for your level
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                        The program is provided for general fitness only and is not a substitute for medical or professional advice
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <p className="italic">
+                    For me, fitness is a constant journey. Building this app is both a personal motivator and a way to share 
+                    what I've learned with anyone looking to explore kettlebell training.
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
