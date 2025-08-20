@@ -64,7 +64,7 @@ export default function KettlebellSection() {
             </div>
 
             <div className="flex gap-3">
-              <Button asChild size="lg" className="bg-blue-900/80 text-white hover:bg-blue-900 border border-blue-800/50">
+              <Button asChild size="lg" className="text-primary bg-blue-950 hover:bg-blue-800">
                 <a href="https://kettlebell9.netlify.app" target="_blank" rel="noopener noreferrer" className="gap-2">
                   Start Program
                   <ExternalLink className="h-4 w-4" />
