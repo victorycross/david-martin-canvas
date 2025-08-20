@@ -34,7 +34,7 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('/functions/v1/contact', {
+      const response = await fetch('https://getnwxzthubdrallsmtf.supabase.co/functions/v1/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
