@@ -21,7 +21,7 @@ export function Navigation() {
   const navItems = [
     { href: "/writing", label: "Writing" },
     { href: "/creative", label: "Creative" },
-    { href: "/applications", label: "Applications" },
+    { href: "/technology", label: "Technology" },
     { href: "/health", label: "Health" },
     { href: "/socials", label: "Socials" },
     { href: "/about", label: "About" },
