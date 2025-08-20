@@ -85,8 +85,8 @@ export default function MeditationSection() {
                 starting with a complete phrase and gradually reducing it until you reach pure being.
               </p>
               <p>
-                Each repetition invites you deeper into stillness, moving from knowing about God to 
-                simply being in divine presence.
+                Each repetition invites you deeper into stillness, moving from conceptual understanding 
+                to simply resting in the divine essence within yourself.
               </p>
             </div>
           </div>
