@@ -1,4 +1,4 @@
-import { ExternalLink, Dumbbell, TrendingUp } from "lucide-react";
+import { ExternalLink, Dumbbell, TrendingUp, Flame, Zap, Target } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -26,17 +26,23 @@ export default function KettlebellSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🔥</span>
-                <span>High-Intensity Workouts</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Flame className="h-4 w-4" />
+                </div>
+                <span className="font-medium">High-Intensity Workouts</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">💪</span>
-                <span>Strength & Conditioning</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Target className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Strength & Conditioning</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">⚡</span>
-                <span>Maximum Fat Burn</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Zap className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Maximum Fat Burn</span>
               </div>
             </div>
             

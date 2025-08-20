@@ -71,17 +71,23 @@ export default function MeditationSection() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🧘</span>
-                <span>Progressive Mantra</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Brain className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Progressive Mantra</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">⏱️</span>
-                <span>5 Minutes</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <span className="text-xs font-bold">5m</span>
+                </div>
+                <span className="font-medium">5 Minutes</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🕯️</span>
-                <span>Centering Practice</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <div className="w-2 h-2 bg-white rounded-full" />
+                </div>
+                <span className="font-medium">Centering Practice</span>
               </div>
             </div>
             

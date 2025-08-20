@@ -1,4 +1,4 @@
-import { Heart, Sunrise, Target } from "lucide-react";
+import { Heart, Sunrise, Target, Zap, Clock, Users } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -26,17 +26,23 @@ export default function YogaSection() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🧘‍♀️</span>
-                <span>Flexibility & Strength</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Zap className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Flexibility & Strength</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">🌅</span>
-                <span>Morning Routines</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Sunrise className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Morning Routines</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">⚖️</span>
-                <span>Balance & Harmony</span>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
+                  <Target className="h-4 w-4" />
+                </div>
+                <span className="font-medium">Balance & Harmony</span>
               </div>
             </div>
             
